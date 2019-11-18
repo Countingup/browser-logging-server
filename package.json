@@ -1,0 +1,8 @@
+{
+  "name": "browser-logging-server",
+  "version": "0.0.1",
+  "description": "Receives and prints logs from web browser",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false
+}
