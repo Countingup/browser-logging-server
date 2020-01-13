@@ -1,4 +1,4 @@
-# browser-logging
+# browser-logging-server
 
 Listens for logs from [browser-logging-client](https://www.npmjs.com/package/browser-logging-client).
 
