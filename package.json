@@ -4,5 +4,44 @@
   "description": "Receives and prints logs from web browser",
   "main": "index.js",
   "license": "MIT",
-  "private": false
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Countingup/browser-logging-server.git"
+  },
+  "scripts": {
+    "version": "npm run build",
+    "postversion": "git push",
+    "test": "echo No tests.",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "fmt": "prettier --write \"./**/*.{md,js,ts,tsx,json}\"",
+    "fmt-check": "prettier --list-different \"./**/*.{md,js,ts,tsx,json}\""
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/ws": "^6.0.3",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "ws": "^7.2.0"
+  },
+  "lint-staged": {
+    "*.{md,js,ts,tsx,json}": [
+      "yarn run prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
