@@ -1,6 +1,6 @@
 {
   "name": "browser-logging-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Receives and prints logs from web browser",
   "main": "./dist/index.js",
   "license": "MIT",
