@@ -9,6 +9,7 @@
     "type": "git",
     "url": "git@github.com:Countingup/browser-logging-server.git"
   },
+  "bin": "dist/index.js",
   "scripts": {
     "version": "npm run build",
     "postversion": "git push",

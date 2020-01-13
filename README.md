@@ -19,13 +19,13 @@ Listening for browser logs on ws://localhost:8888
 
 ### Install globally
 
-Alternatively, install globally and run directly with node:
+Alternatively, install globally and run directly:
 
 #### yarn
 
 ```
 $ yarn global add browser-logging-server
-$ node browser-logging-server
+$ browser-logging-server
 Listening for browser logs on ws://localhost:8888
 ```
 
@@ -33,7 +33,7 @@ Listening for browser logs on ws://localhost:8888
 
 ```
 $ npm install --global browser-logging-server
-$ node browser-logging-server
+$ browser-logging-server
 Listening for browser logs on ws://localhost:8888
 ```
 
